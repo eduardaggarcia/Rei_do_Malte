@@ -1,0 +1,50 @@
+import { K as jsxRuntimeExports } from "./server-CRPQzhcX.js";
+import { P as PageShell } from "./PageShell-CwcSk5_0.js";
+import "node:async_hooks";
+import "node:stream/web";
+import "node:stream";
+import "./Footer-C0yO_IKi.js";
+import "./router-CNNqbNQn.js";
+const reiDoMalte = "/assets/rei-do-malte-BgjUWD7Q.jpg";
+const beers = [{
+  size: "1 litro",
+  price: "R$ 29,90",
+  image: reiDoMalte,
+  title: "Rei do Malte · 1 litro",
+  description: "Cerveja artesanal puro malte para quem quer o produto completo em volume maior."
+}, {
+  size: "600ml",
+  price: "R$ 19,90",
+  image: reiDoMalte,
+  title: "Rei do Malte · 600ml",
+  description: "A mesma cerveja artesanal em um formato mais compacto para o dia a dia."
+}, {
+  size: "269ml",
+  price: "R$ 9,90",
+  image: reiDoMalte,
+  title: "Rei do Malte · 269ml",
+  description: "Uma dose prática e elegante da cerveja puro malte da Rei do Malte."
+}];
+function Loja() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(PageShell, { title: "Nossa Adega", kicker: "", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mx-auto max-w-7xl px-6 pb-16", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-center max-w-2xl mx-auto text-[color:var(--muted-foreground)] mb-14", children: "Três estilos, uma coroa. Cada rótulo é uma jornada sensorial assinada pelos mestres cervejeiros." }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid gap-7 sm:grid-cols-1 lg:grid-cols-3", children: beers.map((beer) => /* @__PURE__ */ jsxRuntimeExports.jsxs("article", { className: "group glass rounded-2xl overflow-hidden hover:glow-gold-strong transition-all duration-500 hover:-translate-y-2", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative aspect-[3/4] overflow-hidden bg-[color:var(--navy-deep)]", children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: beer.image, alt: beer.title, loading: "lazy", width: 600, height: 800, className: "h-full w-full object-cover group-hover:scale-105 transition-transform duration-700" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-5", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-baseline justify-between gap-3", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display text-xl text-gold", children: beer.title }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-[color:var(--muted-foreground)]", children: "4.8%" })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-[color:var(--muted-foreground)] mt-2 leading-relaxed min-h-[3rem]", children: beer.description }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-5 flex items-center justify-between gap-3", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-display text-lg text-gradient-gold", children: beer.size }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-display text-xl text-gradient-gold", children: beer.price })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("button", { className: "mt-4 w-full rounded-lg gradient-gold px-4 py-2 text-sm font-bold text-[color:var(--navy-deep)] hover:brightness-110 transition glow-gold", children: "Comprar" })
+      ] })
+    ] }, beer.size)) })
+  ] }) });
+}
+export {
+  Loja as component
+};
